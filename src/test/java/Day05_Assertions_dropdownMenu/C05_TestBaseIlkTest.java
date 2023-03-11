@@ -5,12 +5,15 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import utilities.TestBase;
 
-import static Day05_Assertions_dropdownMenu.C01_Assertions.driver;
+public class C05_TestBaseIlkTest extends TestBase {
 
-public class C05_TestBaseIlkTest {
+
+
+
     @Test
-    public void amazonTest(){
+    public void amazonTest() {
 
         // amazona gidelim
         driver.get("https://www.amazon.com");
@@ -18,9 +21,9 @@ public class C05_TestBaseIlkTest {
         driver.findElement(By.id("twotabsearchtextbox"))
                 .sendKeys("Nutella" + Keys.ENTER);
         // Sonuclarin Nutella icerdigini test edelim
-        WebElement actualSonucYaziElementi= driver.findElement(By.xpath("//h1[@class='a-size-base s-desktop-toolbar a-text-normal']"));
-        String expectedIcerik= "Nutella";
-        String actualSonucYazisi= actualSonucYaziElementi.getText();
+        WebElement actualSonucYaziElementi = driver.findElement(By.xpath("//h1[@class='a-size-base s-desktop-toolbar a-text-normal']"));
+        String expectedIcerik = "Nutella";
+        String actualSonucYazisi = actualSonucYaziElementi.getText();
         Assert.assertTrue(actualSonucYazisi.contains(expectedIcerik));
     }
 }

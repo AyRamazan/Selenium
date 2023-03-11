@@ -4,14 +4,17 @@ package Day05_Assertions_dropdownMenu;
 import utilities.TestBase;
 
 public class C06_DropdownMenu extends TestBase {
+
+
+
+
     /*
 
-
-    @Test
+     @Test
     public void test01() {
         //● https://the-internet.herokuapp.com/dropdown adresine gidin.
         driver.get("https://the-internet.herokuapp.com/dropdown");
-        WebElement ddm= driver.findElement(By.xpath("//select[@id='dropdown']"));
+        WebElement ddm = driver.findElement(By.xpath("//select[@id='dropdown']"));
         Select select = new Select(ddm);
         //  1.Index kullanarak Seçenek 1’i (Option 1) seçin ve yazdırın
         select.selectByIndex(1);
@@ -25,17 +28,19 @@ public class C06_DropdownMenu extends TestBase {
         select.selectByVisibleText("Option 1");
         System.out.println(select.getFirstSelectedOption().getText());
         //  4.Tüm dropdown değerleri(value) yazdırın
-        List<WebElement> optionElementListesi= select.getOptions();
+        List<WebElement> optionElementListesi = select.getOptions();
         System.out.println("======");
-        for (WebElement eachelement: optionElementListesi
+        for (WebElement eachelement : optionElementListesi
         ) {
             System.out.println(eachelement.getText());
         }
         //  5.Dropdown’un boyutununun 4 oldugunu test edin
-        int expectedBoyut= 4;
-        int actualBoyut= optionElementListesi.size();
-        Assert.assertEquals(expectedBoyut,actualBoyut);
+        int expectedBoyut = 4;
+        int actualBoyut = optionElementListesi.size();
+        Assert.assertEquals(expectedBoyut, actualBoyut);
         bekle(3);
 
      */
+
     }
+

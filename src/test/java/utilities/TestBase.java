@@ -1,27 +1,30 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
 public class TestBase {
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
     @BeforeClass
-    public void setup(){
+    public static void setup() {
+
+
         WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
     }
 
     @AfterClass
-    public void teardown(){
+    public static void teardown() {
         driver.close();
     }
 }
