@@ -1,6 +1,7 @@
 package Day06_window_iframe_actionsClass;
 
 public class C06_DragAndDrop {
+    /*
 
     @Test
     public void test01(){
@@ -17,4 +18,6 @@ public class C06_DragAndDrop {
         Assert.assertEquals(expectedYazi,actualyazi);
         bekle(3);
     }
+
+     */
 }

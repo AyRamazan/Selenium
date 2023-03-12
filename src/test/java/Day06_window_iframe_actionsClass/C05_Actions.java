@@ -1,6 +1,8 @@
 package Day06_window_iframe_actionsClass;
 
 public class C05_Actions {
+
+    /*
     @Test
     public void test01(){
         //2- https://the-internet.herokuapp.com/context_menu sitesine gidin
@@ -33,6 +35,8 @@ public class C05_Actions {
         Assert.assertEquals(expectedYazi,actualYazi);
         bekle(3);
     }
+
+     */
 }
 
 

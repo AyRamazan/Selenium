@@ -1,10 +1,10 @@
 package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.After;
+import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 
 import java.time.Duration;
 
@@ -12,7 +12,7 @@ public class TestBase {
 
     public static WebDriver driver;
 
-    @BeforeClass
+    @Before
     public static void setup() {
 
 
@@ -23,9 +23,8 @@ public class TestBase {
 
     }
 
-    @AfterClass
-    public static void teardown() {
-        driver.close();
+    @After
+    public static void teardown() { driver.quit();
     }
 
     public void bekle(int saniye){
