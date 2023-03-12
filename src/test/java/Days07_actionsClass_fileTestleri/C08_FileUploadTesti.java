@@ -1,6 +1,8 @@
 package Days07_actionsClass_fileTestleri;
 
 public class C08_FileUploadTesti {
+
+
     /*
     @Test
     public void test01(){
@@ -17,6 +19,8 @@ public class C08_FileUploadTesti {
             chooseFile ile secmemiz gereken dosyanin dosya yolunu olusturup
             olusturulan dosya yolunu sendKeys ile chooseFile butonuna gondermemiz yeterli olur
          */
+
+    /*
         String dinamikDosyaYolu= System.getProperty("user.home")+"/Downloads/logo.png";
         WebElement chooseFileButonu= driver.findElement(By.id("file-upload"));
         chooseFileButonu.sendKeys(dinamikDosyaYolu);
@@ -28,4 +32,6 @@ public class C08_FileUploadTesti {
         bekle(5);
 
     }
+
+     */
 }
