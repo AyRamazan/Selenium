@@ -12,7 +12,7 @@ public class C06_FileExistTesti extends TestBase {
 
 
     @Test
-    public void test01(){
+    public void test01() {
 
         //2. https://the-internet.herokuapp.com/download adresine gidelim.
         driver.get("https://the-internet.herokuapp.com/download");
@@ -25,29 +25,12 @@ public class C06_FileExistTesti extends TestBase {
         bekle(5);
 
         // dosya dowloads'a ineceği icin dinamik dosya yolu olusturalım
-        String dinamikDosyaYolu= System.getProperty("user.home")+"/Dowloads/logo.png";
+        String dinamikDosyaYolu = System.getProperty("user.home") + "/Dowloads/logo.png";
 
         Assert.assertTrue(Files.exists(Paths.get(dinamikDosyaYolu)));
 
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -67,4 +50,3 @@ public class C06_FileExistTesti extends TestBase {
     }
 
      */
-}

@@ -13,16 +13,21 @@ public class C04_FilePath extends TestBase {
     public void test01() {
 
         // bilgisayarimizin temel dosya yolu user.home
+
         // /Users/ahmetbulutluoz/Desktop/Thedelta.docx
         //C:\Users\FURKAN\Desktop\TheDelta.docx"
         //C:\Users\Lenovo\Desktop\TheDelta.docx
         // /Users/ahmetbulutluoz/Downloads
 
         // icinde bulundugumuz projenin temel dosya yolu user.dir
+
         //  /Users/ahmetbulutluoz/IdeaProjects/seleniumTeam108
         //  /Users/ahmetbulutluoz/IdeaProjects/seleniumTeam108/src/test/java/day07_actionsClass_fileTestleri/text.txt
         // C:\Users\Zafer\Desktop\gitHubTeam108\com.wisequarter1\src\test\java\day07_fileTests\text
         // C:\Users\sevil\IdeaProjects\seleniumTeam108\src\test\java\day07_actionClass_fileTest\text.txt
+
+        //C:\Users\DELL\Desktop\Selenium\seleniumTeam108\src\test\java\Days07_actionsClass_fileTestleri\text.txt
+
 
 
         String dosyaYolu= "\u202AC:\\Users\\DELL\\Desktop\\Tori01";
@@ -43,6 +48,9 @@ public class C04_FilePath extends TestBase {
 
         System.out.println(System.getProperty("user.home"));
         dosyaYolu=System.getProperty("user.home")+ "\\DELL\\Desktop\\Tori01";
+
+
+        System.out.println(System.getProperty("user.home"));
 
 
 
