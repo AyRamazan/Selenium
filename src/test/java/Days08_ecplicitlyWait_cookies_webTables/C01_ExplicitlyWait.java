@@ -56,10 +56,9 @@ public class C01_ExplicitlyWait {
         //B - EGER kullanacagimiz webelement locate edilebilir ise locate yapalim
 
         //WebElement itsGoneElementi=
-        //        driver.findElement(By.xpath("//*[text()=\"It's gone!\"]"));
+                driver.findElement(By.xpath("//*[text()=\"It's gone!\"]"));
 
-        //C- EGER locate etmemiz icin zamana ihtiyac varsa,
-        // Locate ve görev tanımlayayı tek satırda yapıyoruz
+        //C- EGER locate etmemiz icin zamana ihtiyac varsa, Locate ve görev tanımlayayı tek satırda yapıyoruz
 
         WebElement itsGoneElementi=
                 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[text()=\"It's gone!\"]")));
