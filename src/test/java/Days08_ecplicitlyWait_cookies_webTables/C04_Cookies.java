@@ -1,6 +1,8 @@
 package Days08_ecplicitlyWait_cookies_webTables;
 
 public class C04_Cookies {
+
+}
     /*
 
     @Test
@@ -53,3 +55,5 @@ public class C04_Cookies {
         Assert.assertTrue(cookiesSeti.size()==0);
     }
 }
+
+     */

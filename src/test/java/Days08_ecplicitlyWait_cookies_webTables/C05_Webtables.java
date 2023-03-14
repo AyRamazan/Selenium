@@ -1,6 +1,9 @@
 package Days08_ecplicitlyWait_cookies_webTables;
 
 public class C05_Webtables {
+
+}
+
     /*
 
     @Test
@@ -53,8 +56,11 @@ public class C05_Webtables {
         String dataXpath= "//tbody/tr["+ satirNo + "]/td["+ sutunNo +"]";
         String istenenData = driver.findElement(By.xpath(dataXpath)).getText();
         return istenenData;
+
+
     }
 }
-Collapse
+
+     */
 
 

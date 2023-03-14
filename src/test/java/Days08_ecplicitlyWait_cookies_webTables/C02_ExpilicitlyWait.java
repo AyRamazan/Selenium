@@ -1,6 +1,8 @@
 package Days08_ecplicitlyWait_cookies_webTables;
 
 public class C02_ExpilicitlyWait {
+
+}
     /*
 
     @Test
@@ -24,4 +26,6 @@ public class C02_ExpilicitlyWait {
         driver.close();
     }
 }
+
+     */
 
